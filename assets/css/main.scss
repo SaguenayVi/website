@@ -1,5 +1,6 @@
 ---
 ---
+
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
@@ -25,7 +26,7 @@
 @include skel-layout((
     reset: 'full',
     boxModel: 'border',
-    grid: ( gutters: 2em ),
+    grid: (gutters: 2em),
     conditionals: true,
     containers: 60em,
     breakpoints: (
@@ -933,7 +934,7 @@ input[type="button"],
     &.disabled,
     &:disabled {
         background-color: _palette(fg) !important;
-        box-shadow: inset 0 -0.15em 0 0 rgba(0,0,0,0.15);
+        box-shadow: inset 0 -0.15em 0 0 rgba(0, 0, 0, 0.15);
         color: _palette(bg) !important;
         cursor: default;
         opacity: 0.25;
@@ -953,8 +954,12 @@ body.landing {
 }
 
 @include keyframes('reveal-header') {
-    0% { top: -5em; }
-    100% { top: 0; }
+    0% {
+        top: -5em;
+    }
+    100% {
+        top: 0;
+    }
 }
 
 #header {
@@ -1083,7 +1088,7 @@ body.landing {
     &.alt {
         @include vendor('animation', 'none');
         background: none;
-        color: rgba(255,255,255,0.75);
+        color: rgba(255, 255, 255, 0.75);
         position: absolute;
 
         nav {
@@ -1092,14 +1097,14 @@ body.landing {
                     a:not(.button) {
                         &.icon {
                             &:before {
-                                color: rgba(255,255,255,0.75);
+                                color: rgba(255, 255, 255, 0.75);
                             }
                         }
                     }
 
                     &.active {
                         a:not(.button) {
-                            background-color: rgba(255,255,255,0.2);
+                            background-color: rgba(255, 255, 255, 0.2);
                         }
                     }
                 }
@@ -1110,14 +1115,14 @@ body.landing {
         input[type="reset"],
         input[type="button"],
         .button {
-            box-shadow: inset 0 0 0 2px rgba(255,255,255,0.5);
+            box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5);
 
             &:hover {
-                background-color: rgba(255,255,255,0.1);
+                background-color: rgba(255, 255, 255, 0.1);
             }
 
             &:active {
-                background-color: rgba(255,255,255,0.2);
+                background-color: rgba(255, 255, 255, 0.2);
             }
         }
     }
@@ -1126,7 +1131,7 @@ body.landing {
 .dropotron {
     background: #fff;
     border-radius: _size(border-radius);
-    box-shadow: 0 2px 0 0 rgba(0,0,0,0.065), inset 0 -1px 0 0 #fff, inset 0 0 0 1px transparentize(_palette(border), 0.5);
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.065), inset 0 -1px 0 0 #fff, inset 0 0 0 1px transparentize(_palette(border), 0.5);
     list-style: none;
     margin: calc(-0.5em + 1px) 0 0 1px;
     padding: 0.5em 0;
@@ -1169,7 +1174,7 @@ body.landing {
             border: solid 1px transparentize(_palette(border), 0.5);
             border-bottom: 0;
             border-right: 0;
-            box-shadow: -0.25em -0.125em 0.125em 0 rgba(0,0,0,0.015);
+            box-shadow: -0.25em -0.125em 0.125em 0 rgba(0, 0, 0, 0.015);
             content: '';
             display: block;
             height: 0.75em;
@@ -1185,12 +1190,13 @@ body.landing {
 /* Banner */
 
 #banner {
-    background-attachment:	scroll,							fixed;
-    background-color:		#666;
-    background-image:		url('images/overlay.png'),		url('../../images/banner.jpg');
-    background-position:	top left,						center center;
-    background-repeat:		repeat,							no-repeat;
-    background-size:		auto,							cover;
+    background-attachment: fixed;
+    background-color: #f5f5f5;
+    background: linear-gradient(0deg, rgba(245, 245, 245, 1) 0%, rgba(255, 255, 255, 0.3) 40%), url('../../images/banner.jpg');
+    //background: url('../../images/banner.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
     padding: 12em 0 20em 0;
     text-align: center;
@@ -1220,16 +1226,16 @@ body.landing {
     input[type="button"],
     .button {
         background-color: transparent;
-        box-shadow: inset 0 0 0 2px rgba(255,255,255,0.5);
+        box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5);
         color: #fff;
         min-width: 12em;
 
         &:hover {
-            background-color: rgba(255,255,255,0.1);
+            background-color: rgba(255, 255, 255, 0.1);
         }
 
         &:active {
-            background-color: rgba(255,255,255,0.2);
+            background-color: rgba(255, 255, 255, 0.2);
         }
 
         &.special {
@@ -1349,7 +1355,7 @@ body.landing {
     select,
     textarea {
         color: _palette(accent2, fg-bold);
-        background: rgba(255,255,255,0.15);
+        background: rgba(255, 255, 255, 0.15);
         border: 0;
 
         &:focus {
@@ -1358,23 +1364,23 @@ body.landing {
     }
 
     ::-webkit-input-placeholder {
-        color: rgba(255,255,255,0.75) !important;
+        color: rgba(255, 255, 255, 0.75) !important;
     }
 
     :-moz-placeholder {
-        color: rgba(255,255,255,0.75) !important;
+        color: rgba(255, 255, 255, 0.75) !important;
     }
 
     ::-moz-placeholder {
-        color: rgba(255,255,255,0.75) !important;
+        color: rgba(255, 255, 255, 0.75) !important;
     }
 
     :-ms-input-placeholder {
-        color: rgba(255,255,255,0.75) !important;
+        color: rgba(255, 255, 255, 0.75) !important;
     }
 
     .formerize-placeholder {
-        color: rgba(255,255,255,0.75) !important;
+        color: rgba(255, 255, 255, 0.75) !important;
     }
 }
 
@@ -1552,7 +1558,7 @@ body.landing {
             outline: 0;
 
             &:before {
-                background: rgba(192,192,192,0.75);
+                background: rgba(192, 192, 192, 0.75);
                 border-radius: _size(border-radius);
                 color: #fff;
                 content: '\f0c9';
@@ -1586,7 +1592,7 @@ body.landing {
 
         .link {
             border-bottom: 0;
-            border-top: solid 1px rgba(255,255,255,0.05);
+            border-top: solid 1px rgba(255, 255, 255, 0.05);
             color: _palette(header, fg);
             display: block;
             height: 44px;
@@ -1602,11 +1608,26 @@ body.landing {
                 color: _palette(header, fg-bold);
             }
 
-            .indent-1 { display: inline-block; width: 1em; }
-            .indent-2 { display: inline-block; width: 2em; }
-            .indent-3 { display: inline-block; width: 3em; }
-            .indent-4 { display: inline-block; width: 4em; }
-            .indent-5 { display: inline-block; width: 5em; }
+            .indent-1 {
+                display: inline-block;
+                width: 1em;
+            }
+            .indent-2 {
+                display: inline-block;
+                width: 2em;
+            }
+            .indent-3 {
+                display: inline-block;
+                width: 3em;
+            }
+            .indent-4 {
+                display: inline-block;
+                width: 4em;
+            }
+            .indent-5 {
+                display: inline-block;
+                width: 5em;
+            }
         }
     }
 

@@ -14,6 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Saguenay Vi
+tagline: Ville Intelligente
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -23,9 +24,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 permalink:    pretty
 
-facebook:
-  default_image: /images/open-graph-default-image.png
-  page: https://www.facebook.com/SaguenayVi
+
 
 # Build settings
 sass:
