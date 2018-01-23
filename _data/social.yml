@@ -1,9 +1,10 @@
 facebook:
+  url: https://www.facebook.com/SaguenayVi
   default_image: /images/open-graph-default-image.png
-  page: https://www.facebook.com/SaguenayVi
 
 twitter:
+  url: https://twitter.com/SaguenayVi
   handle: SaguenayVi
 
 github:
-  url: https://github.com/orgs/SaguenayVi
+  url: https://github.com/SaguenayVi
