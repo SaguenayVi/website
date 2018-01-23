@@ -1,17 +1,27 @@
+$brand-color: #c12e39;
+
 #banner {
     color: #6c6e70;
 
-    h2 {
-        color: #6c6e70;
+    .tagline {
+        text-transform: uppercase;
+        color: $brand-color;
+        font-size: 1.5em;
+        letter-spacing: 10px;
+    }
 
-        span {
-            font-weight: bold;
+    .logo {
+        //max-width: 100%;
+        //margin: 0 15%;
+
+        img {
+            max-width: 100%;
         }
     }
 
     .button {
-        color: #c12e39;
-        background-color: rgba(255, 255, 255, 0.85);
+        color: $brand-color;
+        background-color: rgba(255, 255, 255, 0.90);
         box-shadow: none;
 
         &:hover {
@@ -20,7 +30,7 @@
 
         &.special {
             color: #fff !important;
-            background-color: #c12e39;
+            background-color: $brand-color;
         }
     }
 }
@@ -34,5 +44,5 @@
 }
 
 #cta {
-    background-color: #c12e39;
+    background-color: $brand-color;
 }
