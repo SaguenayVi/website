@@ -26,9 +26,9 @@
 <meta content="{{ site.url }}/about/" property="article:author">
 {% endif %}
 {% if page.image %}
-<meta content="{{ site.url }}/images/{{ page.image }}" property="og:image">
+<meta content="{{ page.image | absolute_url }}" property="og:image">
 {% else %}
-<meta content="{{ site.url }}/{{ site.facebook.default_image }}" property="og:image">
+<meta content="{{ site.data.social.facebook.default_image | absolute_url }}" property="og:image">
 {% endif %}
 {% if page.categories %}
 {% for category in page.categories limit:1 %}

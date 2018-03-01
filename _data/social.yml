@@ -1,6 +1,6 @@
 facebook:
   url: https://www.facebook.com/SaguenayVi
-  default_image: /images/open-graph-default-image.png
+  default_image: /images/open-graph-default-image.jpg
 
 twitter:
   url: https://twitter.com/SaguenayVi
@@ -8,3 +8,4 @@ twitter:
 
 github:
   url: https://github.com/SaguenayVi
+  repo: https://github.com/SaguenayVi/website
