@@ -1,3 +1,5 @@
+@import "libs/table-grid";
+
 $brand-color: #c12e39;
 
 .clearfix {
@@ -94,6 +96,46 @@ img {
             }
         }
     }
+}
+
+.box-row {
+    margin-bottom: 2em;
+
+    .grid-col {
+        height: 0;
+
+        .box {
+            height: 100%;
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+
+        &:first-child .box {
+            margin-left: 0;
+        }
+
+        &:last-child .box {
+            margin-right: 0;
+        }
+
+    }
+
+    @include breakpoint(mobile) {
+        margin-bottom: 0;
+
+        .grid-col {
+            height: auto;
+
+            &:first-child .box {
+                margin-left: 1em;
+            }
+
+            &:last-child .box {
+                margin-right: 1em;
+            }
+        }
+    }
+
 }
 
 #cta {

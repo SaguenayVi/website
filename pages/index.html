@@ -16,8 +16,8 @@ permalink: /
     <!--<span class="image featured"><img src="images/pic01.jpg" alt=""/></span>-->
 </section>
 
-<div class="row">
-    <div class="6u 12u(narrower)">
+<div class="box-row grid grid-responsive grid-fixed">
+    <div class="grid-col">
 
         <section class="box special">
             <span class="image featured"><img src="{{ 'images/lancement.jpg' | absolute_url }}" alt=""></span>
@@ -32,16 +32,18 @@ permalink: /
         </section>
 
     </div>
-    <div class="6u 12u(narrower)">
+    <div class="grid-col">
 
         <section class="box special">
             <span class="image featured"><img src="{{ 'images/crowd.jpg' | absolute_url }}" alt=""></span>
             <h3>L'organisation</h3>
             <p>Composée entièrement de citoyens bénévoles, l'organisation va au-delà du défi en organisant toutes sortes d'activités et en démarrant différents projets.</p>
             <ul class="actions">
-                <li><a href="{{ site.baseurl }}{% link pages/organization.html %}" class="button alt">En apprendre plus</a></li>
+                <li><a href="{{ social.facebook.url }}" class="button alt" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Page facebook</a></li>
             </ul>
         </section>
 
     </div>
 </div>
+
+{% include candidature.html %}

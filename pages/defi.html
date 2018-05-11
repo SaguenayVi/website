@@ -1,6 +1,7 @@
 ---
 layout: page
-permalink: /defi
+title: 'Défi des villes intelligentes'
+permalink: defi
 ---
 <section class="box shadow clearfix">
     <header class="major">
@@ -93,20 +94,29 @@ permalink: /defi
     </p>
 </section>
 
-<section class="box clearfix">
-    <header>
-        <h3>Voici ce que vous en pensez</h3>
-    </header>
-    <p>
-        <img class="2u 3u(narrower) 4u(mobilep) inline-img"
-             src="{{ 'images/survey.png' | relative_url }}"
-             alt="">
-        Dans le cadre du Défi des villes intelligentes, nous avons demandé l'avis de la population de
-        Saguenay pour orienter notre proposition. Cette consultation s'est <strong>terminée le 25
-        mars</strong> et il est maintenant possible de consulter les résultats.
-    </p>
-    <ul class="actions">
-        <li><a href="{{ 'assets/files/reponses-consultation.pdf' | relative_url }}" class="button"
-               target="_blank">Voir les résultats</a></li>
-    </ul>
-</section>
+<div class="box-row grid grid-responsive grid-fixed">
+    <div class="grid-col">
+
+        <section class="box special clearfix">
+            <header>
+                <h3>Voici ce que vous en pensez</h3>
+            </header>
+            <p>
+                Dans le cadre du Défi des villes intelligentes, nous avons demandé l'avis de la population de
+                Saguenay pour orienter notre proposition. Cette consultation s'est <strong>terminée le 25
+                mars</strong> et il est maintenant possible de consulter les résultats.
+            </p>
+            <ul class="actions">
+                <li><a href="{{ 'assets/files/reponses-consultation.pdf' | relative_url }}" class="button"
+                       target="_blank"><i class="fa fa-file-pdf-o fa-fw"></i> Les résultats</a></li>
+            </ul>
+        </section>
+
+
+    </div>
+    <div class="grid-col">
+
+        {% include candidature.html %}
+
+    </div>
+</div>
