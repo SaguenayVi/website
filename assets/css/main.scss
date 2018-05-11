@@ -323,7 +323,7 @@ textarea {
 }
 
 input[type="checkbox"],
-input[type="radio"], {
+input[type="radio"] {
     @include vendor('appearance', 'none');
     display: block;
     float: left;
@@ -963,26 +963,26 @@ body.landing {
 }
 
 #header {
-    background: _palette(header, bg);
-    color: _palette(header, fg);
-    cursor: default;
+    //background: _palette(header, bg);
+    //color: _palette(header, fg);
+    //cursor: default;
     height: 3.25em;
     left: 0;
     line-height: 3.25em;
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
-    z-index: 10000;
+    //z-index: 10000;
 
     h1 {
-        color: inherit;
-        height: inherit;
-        left: 1.25em;
+        //color: inherit;
+        //height: inherit;
+        //left: 1.25em;
         line-height: inherit;
         margin: 0;
         padding: 0;
-        position: absolute;
-        top: 0;
+        //position: absolute;
+        //top: 0;
 
         a {
             color: _palette(header, fg-bold);
@@ -992,11 +992,11 @@ body.landing {
     }
 
     nav {
-        height: inherit;
-        line-height: inherit;
+        //height: inherit;
+        //line-height: inherit;
         position: absolute;
         right: 0.75em;
-        top: 0;
+        //top: 0;
         vertical-align: middle;
 
         > ul {
@@ -1021,14 +1021,14 @@ body.landing {
                 }
 
                 a:not(.button) {
-                    color: _palette(header, fg-bold);
+                    //color: _palette(header, fg-bold);
                     display: inline-block;
                     text-decoration: none;
                     border: 0;
 
                     &.icon {
                         &:before {
-                            color: _palette(header, fg-light);
+                            //color: _palette(header, fg-light);
                             margin-right: 0.5em;
                         }
                     }
@@ -1038,11 +1038,11 @@ body.landing {
                     margin-left: 0;
                 }
 
-                &.active {
-                    a:not(.button) {
-                        background-color: transparentize(_palette(header, fg-light), 0.75);
-                    }
-                }
+                //&.active {
+                //    a:not(.button) {
+                //        background-color: transparentize(_palette(header, fg-light), 0.75);
+                //    }
+                //}
 
                 .button {
                     margin: 0 0 0 0.5em;
@@ -1052,22 +1052,22 @@ body.landing {
         }
     }
 
-    input[type="submit"],
-    input[type="reset"],
-    input[type="button"],
-    .button {
-        background-color: transparent;
-        box-shadow: inset 0 0 0 2px _palette(header, fg-light);
-        color: _palette(header, fg-bold);
-
-        &:hover {
-            background-color: transparentize(_palette(header, fg-light), 0.75);
-        }
-
-        &:active {
-            background-color: transparentize(_palette(header, fg-light), 0.5);
-        }
-    }
+    //input[type="submit"],
+    //input[type="reset"],
+    //input[type="button"],
+    //.button {
+    //    background-color: transparent;
+    //    box-shadow: inset 0 0 0 2px _palette(header, fg-light);
+    //    color: _palette(header, fg-bold);
+    //
+    //    &:hover {
+    //        background-color: transparentize(_palette(header, fg-light), 0.75);
+    //    }
+    //
+    //    &:active {
+    //        background-color: transparentize(_palette(header, fg-light), 0.5);
+    //    }
+    //}
 
     .container {
         position: relative;
@@ -1083,48 +1083,6 @@ body.landing {
 
     &.reveal {
         @include vendor('animation', 'reveal-header 0.5s');
-    }
-
-    &.alt {
-        @include vendor('animation', 'none');
-        background: none;
-        color: rgba(255, 255, 255, 0.75);
-        position: absolute;
-
-        nav {
-            > ul {
-                > li {
-                    a:not(.button) {
-                        &.icon {
-                            &:before {
-                                color: rgba(255, 255, 255, 0.75);
-                            }
-                        }
-                    }
-
-                    &.active {
-                        a:not(.button) {
-                            background-color: rgba(255, 255, 255, 0.2);
-                        }
-                    }
-                }
-            }
-        }
-
-        input[type="submit"],
-        input[type="reset"],
-        input[type="button"],
-        .button {
-            box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5);
-
-            &:hover {
-                background-color: rgba(255, 255, 255, 0.1);
-            }
-
-            &:active {
-                background-color: rgba(255, 255, 255, 0.2);
-            }
-        }
     }
 }
 
@@ -1516,10 +1474,6 @@ body.landing {
         padding-top: 0;
     }
 
-    #header {
-        display: none;
-    }
-
     /* Banner */
 
     #banner {
@@ -1741,7 +1695,7 @@ body.landing {
     /* Banner */
 
     #banner {
-        padding: 2em 1em 10em;
+        padding: 5em 1em 16em;
 
         h2 {
             font-size: 2.25em;
@@ -1899,12 +1853,6 @@ body.landing {
                 }
             }
         }
-    }
-
-    /* Banner */
-
-    #banner {
-        padding: 2em 1em 7em 1em;
     }
 
     /* Main */

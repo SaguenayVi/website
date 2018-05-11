@@ -1,0 +1,51 @@
+%grid-col {
+    display: table-cell;
+    float: inherit;
+
+    &.expand {
+        width: 100%;
+    }
+}
+
+.grid {
+    display: table;
+    width: 100%;
+    max-width: 100%;
+
+    &.grid-fixed {
+        table-layout: fixed;
+    }
+
+    > .grid-col {
+        @extend %grid-col;
+    }
+
+    > .grid-row {
+        display: table-row;
+
+        > .grid-col {
+            @extend %grid-col;
+        }
+    }
+
+    &.grid-responsive {
+
+        @include breakpoint(mobile) {
+            display: block;
+
+            > .grid-col {
+                display: block;
+            }
+
+            > .grid-row {
+                display: block;
+
+                > .grid-col {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+

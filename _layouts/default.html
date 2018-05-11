@@ -10,17 +10,38 @@
 
 <body class="landing">
 
-{{ content }}
+<div id="page-wrapper">
 
+    <!-- Header -->
+    {% include header.html %}
 
+    <!-- Banner -->
+    {% include banner.html %}
 
+    <!-- Main -->
+    <section id="main" class="container">
+        <div class="10u -1u 12u(narrow)">
+            {{ content }}
+        </div>
+    </section>
+
+    <!-- CTA -->
+    {% include mailing.html %}
+
+    <!-- Footer -->
+    {% include footer.html %}
+
+</div>
 <!-- Scripts -->
+{% comment %}
 <!--<script src="assets/js/jquery.min.js"></script>-->
 <!--<script src="assets/js/jquery.dropotron.min.js"></script>-->
 <!--<script src="assets/js/jquery.scrollgress.min.js"></script>-->
 <!--<script src="assets/js/skel.min.js"></script>-->
 <!--<script src="assets/js/util.js"></script>-->
-<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+{% endcomment %}
+<!--[if lte IE 8]>
+<script src="assets/js/ie/respond.min.js"></script><![endif]-->
 <!--<script src="assets/js/main.js"></script>-->
 
 </body>
