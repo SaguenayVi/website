@@ -107,8 +107,7 @@ img {
 
         .box {
             height: 100%;
-            margin-left: 1em;
-            margin-right: 1em;
+            margin: 0 1em;
         }
 
         &:first-child .box {
@@ -118,7 +117,6 @@ img {
         &:last-child .box {
             margin-right: 0;
         }
-
     }
 
     @include breakpoint(mobile) {
