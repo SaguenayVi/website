@@ -28,7 +28,8 @@ survey: https://docs.google.com/forms/d/e/1FAIpQLSftsSkoGJtd58pTap3yJQig9jSwci47
 sass:
   sass_dir: _sass
 #markdown: kramdown
-#plugins:
+plugins:
+  - jekyll-redirect-from
 #  - jekyll-feed
 
 # Exclude from processing.
